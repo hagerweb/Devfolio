@@ -1,0 +1,442 @@
+/* ----------------------- fonts ------------------- */
+:root{
+    --main-color:#0078ff;
+   
+}
+.fs-7{
+    font-size: 12.8px;
+}
+.fs-16{
+    font-size: 15px ;
+}
+
+.text-gray{
+    color: #4E4E4E;
+}
+.fw-4{
+    font-weight: 400;
+    
+}
+/* ------------------------------------------------------- */
+
+/* --------------------------- main title--------------------------------- */
+
+.main-title  h1{
+    font-size: 48px;
+}
+ .main-title  p{
+    font-size: 16px;
+}
+ .main-title .line{
+ 
+    width:40px;
+    height: 5px;
+    margin: auto;
+  
+    background-color:var(--main-color);
+}
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------ Fixed -------------- */
+.up-home a i{
+    color: white;
+    font-size: 25px;
+}
+.up-home{
+    position: fixed;
+    bottom: 13px;
+    right: 15px;
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 77;
+}
+
+/* __________________________________________________ Home Section ______________________________________________________ */
+
+/* ===================================== Nav Bar ====================================== */
+
+nav  .navbar-nav a{
+    color: white !important;
+    font-size:16px !important ;
+    position: relative;
+}
+nav  .navbar-nav a::before , .btn-group button::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    height: 1.5px;
+    left: 7;
+    bottom: 0;
+    transition: all 0.8s;
+}
+nav  .navbar-nav a:hover::before , .btn-group button:hover::before{
+    width: 60%;
+    margin: auto;
+   
+}
+
+nav .navbar-brand {
+    color: white !important;
+    font-size:28px ;
+    letter-spacing: 1px;
+
+}
+
+body:not(:has(:target)) .nav .active::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.protfol:target) .protofol-link::before,
+body:has(.blog:target) .blog-link::before,
+body:has(.contact:target) .contact-link::before 
+
+{
+    width: 60%;
+}
+.btn-group .dropend:hover , .btn-group .drop1 a:hover{
+    color: var(--main-color) !important;
+}
+
+nav .navbar-toggler {
+    color: #0078ff !important;
+    position: relative;
+    z-index: 333;
+   
+}
+
+/* ==================================== Header ============================================ */
+
+header{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment:  fixed;
+    position: relative;
+    z-index: 444;
+}
+header .layer{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%;
+    height: 100%; */
+}
+header .content h1{
+    color: white;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+header .content span{
+    color: white;
+    font-size: 40px
+   
+}
+
+.btn-group  button{
+  
+   border: none !important;
+}
+.btn-group li a{
+    color: #000 !important;
+   border: none !important;
+   font-size: 16px !important;
+   font-weight: 400 !important;
+}
+.btn-group li {
+    margin-top: 7px !important;
+}
+.btn-group .drop1{
+    padding: 10px !important;
+    border-radius: 0 !important;
+}
+
+
+/* _____________________________________________ End Home Section _______________________________________________________*/
+
+/* ______________________________________________ About Section ________________________________________________________ */
+
+.about {
+    padding-top: 50px !important;
+}
+
+.about .image-cap .sp1 , .skills p{
+    color: #1E1E1E ;
+    font-size: 17.6px;
+    font-weight: 500;
+}
+.about .image-cap .sp2{
+    color: #4E4E4E ;
+    font-size: 16px;
+  
+}
+.about  .sp{
+   margin-bottom: 8px;
+   margin-top: 15px;
+  
+}
+.about .skills span {
+    color: #4E4E4E;
+    font-size: 16px;
+    margin-bottom: 15px ;
+}
+.about .lead , .contact .lead{
+    color: #4E4E4E;
+    font-size: 20px;
+    width: 96%;
+    
+}
+.content2 .h2{
+    position: relative;
+}
+
+.content2 .h2::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 17%;
+    height: 3px;
+    left: 0;
+    bottom: -10;
+
+}
+/* ____________________________________________________ End About Section _________________________________________________ */
+
+/* ____________________________________________________ Services Section __________________________________________________ */
+
+.services .service-item{
+    padding-top: 35px;
+    padding-bottom: 35px;
+   
+    border-radius: 15px;
+}
+.icon i{
+    font-size: 32px;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    transition: all 0.5s;
+
+}
+.icon{
+    transition: all 1s;
+    width: 110px;
+    height: 110px;
+   
+    border-radius: 50%;
+    border: 10px solid var(--main-color);
+    margin: auto;
+    margin-bottom: 20px;
+    transition: all 0.5;
+    
+}
+.services .service-item .service-content p{
+   
+    width: 90%;
+    margin: auto;
+}
+/* ----------------- Hover ------------- */
+
+.services .service-item:hover i {
+    color: white;
+   
+}
+.services .service-item:hover .icon {
+    color: white;
+    border: 10px solid rgb(204, 221, 244);
+    background-color: #0661c8;
+   
+}
+/* ----------------------------------------- */
+/* _________________________________________________________ End services section ___________________________________________________*/
+
+/* _________________________________________________________ Details Section __________________________________________________________ */
+
+.work{
+    position: relative;
+    background-image: url('../images/counters-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
+}
+.work .layer , .client .layer , .contact .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--main-color);
+    opacity: 0.7;
+
+}
+.work .row , .contact .container , footer .container-fluid , .footer{
+    position: relative;
+    z-index: 4;
+}
+
+
+ .work .icon i{
+    font-size: 27px;
+    text-align: center;
+    color: white;
+   
+
+}
+ .work .icon{
+   
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 9px solid rgba(255,255,255,0.7);
+    margin: auto;
+    margin-bottom: 15px;
+    
+    
+}
+.work span{
+    font-size: 16px;
+    color: white;
+}
+/* ---------------------------------------------- End Details Section ------------------------------------------------------ */
+
+/* ---------------------------------------------- protofolio  Section ---------------------------------------------------------- */
+
+.protfol .icon-plus{
+    width: 40px;
+    height: 40px;
+    
+    
+}
+
+.protfol .card  {
+    transition: all 0.8s;  
+}
+.protfol .card  img{
+    transition: all 0.6s ease-in-out;    
+}
+
+.protfol .card  .image{
+   
+    overflow: hidden;   
+}
+.protfol .card:hover img{
+    transform: scale(1.2); 
+}
+/* --------------------------------------------- End Protofolio Section ------------------------------------------------------ */
+/* ---------------------------------------------- Client Section --------------------------------------------------------------- */
+.client , .contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+
+
+}
+.client .layer{
+    opacity: 0.6;
+}
+
+.client .inner p{
+    width: 70%;
+    margin: auto;
+}
+ .client .carousel-indicators [ data-bs-target]{
+      width: 10px;
+      height: 10px;
+    border-radius: 50%;
+}
+/* ------------------------------------- End Client Section -------------------------------------------------- */
+/* ---------------------------------------- Blog Section ----------------------------------------------------- */
+.blog .card-body{
+    position: relative;
+}
+.blog .title{
+    position: absolute;
+    top:-30px;
+    left: 37%;
+}
+
+ul{
+
+    position: relative;
+}
+.blog ul li .bloger::before{
+    content: "";
+    background-image: url('../images/testimonial-2.jpg');
+    background-position: center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 14;
+    left: 18;
+}
+/* -------------------------------------------------  End Blog Section ----------------------------------------------- */
+/* ------------------------------------------------- Contact Section ---------------------------------------------------- */
+/* .contact{
+
+} */
+.contact h3{
+position: relative;
+}
+.contact h3::before{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 18%;
+    height: 3px;
+    left: 0;
+    bottom: -11;
+    }
+    
+.contact button{
+    font-size: 19.2px;
+    transition: all 0.2s;
+
+    }
+.contact .lead {
+    width: 90%;
+}
+.contact .social li {
+    width: 47px;
+    height: 47px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    transition:  all 0.7s ;
+}
+.contact .social li span i{
+    color: black;
+    margin-top: 5px;
+    transition:  all 0.2s;
+}
+/* ------------------ Hover --------------------- */
+
+.contact .social li :hover i {
+    color: white ;
+   
+}
+
+.contact .social li:hover {
+    color: white;
+    border: 3px solid rgb(171, 195, 230);
+    background-color:var(--main-color);
+    box-shadow: 5px 3px 4px 2px;
+   
+}
+ .contact button:hover{
+    border: 5px solid rgb(171, 195, 230) !important;
+    box-shadow: 5px 3px 4px 2px;
+   
+    background-color:#157ff8 !important;
+   
+
+}
+/* ---------------------------------------------- End Contact Section ------------------------------------------------ */

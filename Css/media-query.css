@@ -1,0 +1,139 @@
+
+/* ========================================= Home Media Query ======================================================*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header .content h1{
+        font-size: 48px;
+        width: 70%;
+        margin: auto;
+        
+    }
+    header .content span{
+       
+        font-size: 24px
+       
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header .content h1{
+        font-size: 48px;
+        width: 100%;
+      
+        
+        
+    }
+    header .content span{
+       
+        font-size: 24px
+       
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header .content h1{
+        font-size: 72px;
+        width: 80%;
+        margin: auto;
+        
+    }
+    header .content span{
+       
+        font-size: 40px
+       
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1000px) {
+    header .content h1{
+        font-size: 72px;
+        width: 100%;
+     
+        
+    }
+    header .content span{
+       
+        font-size: 40px
+       
+    }
+
+}
+/* ================================================ End Home ======================================================= */
+
+@media only screen and (max-width: 650px) {
+.about .container{
+   width: 95% !important;
+   margin: auto !important;
+
+}
+.about-right{
+    margin-top: 25px;
+}
+.about-right h5{
+   font-size: 30px;
+}
+.image-cap{
+    margin-top: 20px;
+}
+}
+
+/* ------------------------------------------------ About --------------------------- */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 770px) and (max-width: 1000px) {
+    .image-about{
+        width: 100% !important;
+
+    }
+    .image-about img{
+        width: 100% !important;
+        
+    }
+
+}
+/* -------------------------------------------- End About --------------------------------------- */
+
+
+/* ---------------------------------------------- Services -------------------------------------- */
+
+@media only screen and (min-width: 700px) and (max-width: 1001px) {
+    .services .container{
+        width: 70% !important;
+    }
+   .col-md-4{
+    width: 100%;
+ 
+   }
+
+}
+/* --------------------------------- End Services ---------------------------------------------- */
+
+/* -------------------------------------- Details  --------------------------------------------- */
+
+
+@media only screen and (min-width: 400px) and (max-width: 650px) {
+     .work {
+      height: 100vh;
+      
+    
+}
+.col-sm-3 {
+    width: 50%;
+}
+
+}
+/* -------------------------------------------------------------------------------------------- */
+/* ----------------------------------- Client -------------------------------------------------- */
+@media only screen and (min-width: 400px) and (max-width: 800px){
+    .client .inner p{
+        width: 95%;
+     
+    }
+}
+/* --------------------------------------------------------------------------------------------- */
